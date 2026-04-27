@@ -1,0 +1,32 @@
+{
+  "name": "rag-model",
+  "version": "1.0.0",
+  "description": "RAG Pipeline using Ollama (nomic-embed-text + Gemma) and Pinecone",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "ingest": "ts-node src/index.ts ingest",
+    "query": "ts-node src/index.ts query",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "rag",
+    "ollama",
+    "pinecone",
+    "embeddings",
+    "gemma"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^7.1.0",
+    "dotenv": "^17.4.1",
+    "mammoth": "^1.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0"
+  }
+}
